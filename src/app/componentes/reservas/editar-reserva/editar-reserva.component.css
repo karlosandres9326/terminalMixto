@@ -1,0 +1,222 @@
+
+ 
+.card{
+    width: 950px;
+    height: 500px; 
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.formulario input[type="radio"]{
+    display: none;
+}
+
+.formulario .radio label {
+    color: black;
+    background: rgba(188, 191, 196, 0.856); 
+    padding: 2px 2px 5x 10px;
+    display: inline-block;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    /*
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+    */
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+    
+}
+
+.formulario .radio label:hover{
+    background: rgba(38, 131, 238, 0.6);
+}
+
+.formulario input[type="radio"]:checked + label{
+    background: #1c56ad;
+    color: white;
+    position: relative;
+     
+}
+
+
+.carro{
+    background-image: url(/images/PLANOCARRO1.jpg);
+    background-repeat: no-repeat;
+    background-size: 530px 300px;  
+    width: 530px;
+    height: 300px; 
+    margin-left: 10px;
+    margin-top: 70px;
+}
+
+.radio{
+  font-family: Arial; 
+}
+
+
+.puesto1{
+    margin-left: 283px;
+    margin-top: -165px;
+    width: 10px;
+    height: 10px;  
+}
+
+
+.puesto2{
+    margin-left: 284px;
+    margin-top: 50px;
+    width: 10px;
+    height: 10px; 
+}
+
+.puesto3{
+    margin-left: 208px;
+    margin-top: -10px;
+    width: 10px;
+    height: 10px; 
+}
+
+.puesto4{
+    margin-left: 207px;
+    margin-top: -70px;
+    width: 10px;
+    height: 10px; 
+}
+
+
+.puesto5{
+    margin-left: 207px;
+    margin-top: -73px;
+    width: 10px;
+    height: 10px; 
+}
+
+
+.puesto6{
+    margin-left: 127px;
+    margin-top: 113px;
+    width: 10px;
+    height: 10px; 
+}
+
+.puesto7{
+    margin-left: 126px;
+    margin-top: -70px;
+    width: 10px;
+    height: 10px; 
+}
+
+.puesto8{
+    margin-left: 125px;
+    margin-top: -73px;
+    width: 10px;
+    height: 10px; 
+}
+
+.titulo{
+    margin-left: 130px;
+    margin-top: -10px;   
+}
+
+
+.title2{
+    margin-left: 610px;
+    margin-top: -35px;
+    
+}
+
+.datos{
+    margin-left: 60px;
+    margin-top: 250px;
+}
+
+.cedula{
+    margin-left: 500px;
+    margin-top: -410px;
+    width: 180px;
+    
+    
+}
+
+
+.nombre{
+    margin-left: 500px;
+    margin-top: 15px;
+    width: 180px;
+    
+}
+
+.apellido{
+    margin-left: 690px;
+    margin-top: -62px;
+    width: 180px;
+    
+}
+
+
+.edad{
+    margin-left: 500px;
+    margin-top: 20px;
+    width: 180px;
+    
+}
+
+
+.telefono{
+    margin-left: 690px;
+    margin-top: -38px;
+    width: 180px;
+    
+}
+
+
+.correo{
+    margin-left: 500px;
+    margin-top: 15px;
+    width: 180px;
+    
+}
+
+
+.guardar{
+    margin-left: 610px;
+    margin-top: 40px;
+    
+}
+
+.alert-danger{
+    color: red;
+    padding-top: 1px;
+    padding-left: 3px;
+    width: 180px;
+    height: 20px;
+      
+}
+
+
+.alert-success{
+   
+    padding: -3px;
+    width: 375px;
+    height: 25px;
+    font-size: 14px;
+    margin-left: 500px;
+    margin-top: 30px;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+         
+}
+
+.container-error-message{
+    padding: -3px;
+    width: 195px;
+    height: 10px;
+    font-size: 12px;
+}
+

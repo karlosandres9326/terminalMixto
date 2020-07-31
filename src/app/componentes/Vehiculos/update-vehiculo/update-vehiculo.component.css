@@ -1,0 +1,178 @@
+.alert-danger{
+    color: red;
+    padding-top: 1px;
+    padding-left: 3px;
+    width: 150px;
+    height: 20px;
+      
+}
+
+
+.alert-success{
+   
+    padding: 15px auto 20px 30px;
+    width: 289px;
+    height: 25px;
+    font-size: 14px;
+    align-content: center;
+    margin: 15px auto 20px 30px;
+         
+}
+
+
+
+.container-error-message{
+    padding: -3px;
+    width: 195px;
+    height: 10px;
+    font-size: 11px;
+}
+
+.card{
+    
+    margin: auto;
+    margin-top: 10px;
+    width: 649px;
+    height: 400px;
+    border-width: 2px;
+    
+}
+
+.card-header{
+    width: 700px;
+    background:   rgba(27, 94, 172, 0.904);
+    color: white;
+    margin-top: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 13px;
+    height: 50px;
+}
+
+.header2{
+    background: rgba(231, 229, 229, 0.596);
+    width: 646px;
+    height: 40px;
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding-left: 240px;
+    margin-left: -1px;
+    padding-top: 5px;
+    margin-top: -10px;
+}
+
+.card-body{
+    padding-right: 10px;
+}
+
+.cerrar{
+    margin-left: 600px;
+    border:rgba(255, 255, 255, 0.616);
+    background:   rgba(27, 95, 172, 0);
+    color: white;
+    display: inline-block;
+    margin-top: -85px;
+
+    
+}
+
+.iconoCarro2{
+    margin-top: -30px;
+    color: white;
+    margin-left: 175px;
+    font-size: 26px;
+}
+
+
+
+h3{
+ margin-top: -50px;
+ padding-top: 20px;
+}
+
+
+.cedula{
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 150px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.marca{
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 200px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;  
+}
+
+.modelo{
+    margin-left: 210px;
+    margin-top: -190px;
+    width: 150px;  
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.conductor{
+    margin-left: 260px;
+    margin-top: 25px;
+    width: 300px;
+    padding-left: 2px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+
+.capacidad{
+    margin-left: 390px;
+    margin-top: -180px;
+    width: 120px; 
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+
+
+.guardar{
+    margin-left: 30px;
+    margin-top: 130px;
+    
+
+}
+
+mat-raised-button{
+    width: 100px;
+    
+}
+
+.container-input-file{
+    margin-left: 200px;
+    margin-top: -10px;
+    font-size: 10px;
+    
+}
+
+.input[type='file']{
+    display: none;
+}
+
+.custom-file{
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+
+

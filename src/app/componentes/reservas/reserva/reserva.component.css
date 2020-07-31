@@ -1,0 +1,409 @@
+
+
+
+ 
+ 
+ .card{
+    width: 99%;
+    height: 500px; 
+    margin: 15px 15px 10px 6px;
+    padding-top: 130px; 
+    padding-left: 1px;
+    padding-right: 10px;
+  
+}
+
+.container-1{
+    width: 500px;
+    height: 500px;
+}
+
+.label{
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;  
+
+}
+
+.puesto{
+    margin-left: 20px;
+    font-size: 35px;
+    position: absolute;
+    margin-top: -1px;
+   
+}
+
+
+.card-header{
+    width: 1010px;
+    background:   rgba(27, 94, 172, 0.904);
+    color: white;
+    margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    padding-left: 390px;
+    padding-top: 13px;
+    height: 50px;
+}
+
+.container-form-authentication{
+    height: 370px;
+    margin: auto;
+    
+   
+}
+
+.cerrar{
+    
+    margin: auto auto 2% 92%;
+    border:rgba(255, 255, 255, 0.616);
+    background:   rgba(27, 95, 172, 0);
+    color: white;
+    display: inline-block;
+    margin-top: -180px;
+
+    
+}
+
+
+.formulario input[type="radio"]{
+    display: none;
+}
+
+.formulario .radio label {
+    color: black;
+    background: rgba(188, 191, 196, 0.856); 
+    padding: 2px 2px 5x 10px;
+    display: inline-block;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    /*
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+    */
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+    
+}
+
+.formulario .radio label:hover{
+    background: rgba(38, 131, 238, 0.6);
+}
+
+.formulario input[type="radio"]:checked + label{
+    background: #1c56ad;
+    color: white;
+    position: relative;
+     
+}
+
+
+
+
+
+
+
+
+.carro{
+
+    background-image: url(/images/PLANOCARRO1.jpg);
+    background-repeat: no-repeat;
+    background-size: 530px 300px;  
+    width: 530px;
+    height: 300px; 
+    margin-left: 10px;
+    margin-top: 150px;
+    position: absolute;  
+    
+  
+}
+
+.libre{
+
+    background-image: url(/images/libre.jpg);
+    background-repeat: no-repeat;
+    background-size: 35px 30px;  
+    width: 35px;
+    height: 30px; 
+    margin-left: 100px;
+    margin-top: 80px;
+    position: absolute;  
+    
+}
+
+.libre1{
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 80px;
+    margin-top: 57px;
+
+}
+
+.ocupado{
+
+        background-image: url(/images/ocupado.jpg);
+        background-repeat: no-repeat;
+        background-size: 35px 30px;  
+        width: 35px;
+        height: 30px; 
+        margin-left: 235px;
+        margin-top: 80px;
+        position: absolute;  
+           
+}
+
+.ocupado1{
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 220px;
+    margin-top: 57px;
+
+}
+
+
+.seleccionado{
+
+    background-image: url(/images/seleccionado.jpg);
+    background-repeat: no-repeat;
+    background-size: 35px 30px;  
+    width: 35px;
+    height: 30px; 
+    margin-left: 370px;
+    margin-top: 80px;
+    position: absolute;  
+ 
+}
+
+.seleccionado1{
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 340px;
+    margin-top: 57px;
+
+}
+
+.info{
+    position: absolute;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 660px;
+    margin-top: 20px;
+}
+
+.radio{
+  font-family: Arial; 
+}
+
+
+.puesto1{
+    margin-left: 283px;
+    margin-top: 285px;
+    width: 10px;
+    height: 10px;
+    position: absolute;   
+}
+
+
+.puesto1Reservado{
+    margin-left: 283px;
+    margin-top: -165px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+
+.puesto2{
+    margin-left: 284px;
+    margin-top: 343px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+.puesto3{
+    margin-left: 208px;
+    margin-top: 343px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+.puesto4{
+    margin-left: 207px;
+    margin-top: 285px;
+    width: 10px;
+    height: 10px;
+    position: absolute;  
+}
+
+
+.puesto5{
+    margin-left: 207px;
+    margin-top: 217px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+
+.puesto6{
+    margin-left: 127px;
+    margin-top: 343px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+.puesto7{
+    margin-left: 126px;
+    margin-top: 285px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+.puesto8{
+    margin-left: 125px;
+    margin-top: 217px;
+    width: 10px;
+    height: 10px; 
+    position: absolute; 
+}
+
+.titulo{
+    margin-left: 130px;
+    margin-top: -10px;   
+}
+
+
+.title2{
+    margin-left: 610px;
+    margin-top: -35px;
+    
+}
+
+.datos{
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.cedula{
+    margin-left: 530px;
+    margin-top: -335px;
+    width: 180px;
+    position: absolute;  
+    
+    
+}
+
+
+.nombre{
+    margin-left: 530px;
+    margin-top: -240px;
+    width: 180px;
+    position: absolute;  
+    
+}
+
+.apellido{
+    margin-left: 740px;
+    margin-top: -263px;
+    width: 180px;
+    position: absolute;  
+    
+}
+
+
+.edad{
+    margin-left: 530px;
+    margin-top: -170px;
+    width: 180px;
+    position: absolute;  
+    
+}
+
+
+.telefono{
+    margin-left: 740px;
+    margin-top: -170px;
+    width: 180px;
+    position: absolute;  
+    
+}
+
+
+.correo{
+    margin-left: 530px;
+    margin-top: -75px;
+    width: 300px;
+    position: absolute;  
+    
+}
+
+
+.guardar{
+    margin-left: 650px;
+    margin-top: 25px;
+    position: absolute;
+    font-size: 20px;  
+    color: rgb(18, 150, 88);
+    
+}
+
+.mat-raised-button{
+    margin-top: 10px;
+    background: rgb(18, 150, 88);
+    color: white;
+    
+    
+}
+
+.alert-danger{
+    color: red;
+    padding-top: 1px;
+    padding-left: 3px;
+    width: 180px;
+    height: 20px;
+      
+}
+
+
+.alert-success{
+   
+    padding: -3px;
+    width: 430px;
+    height: 25px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: 45px;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 5px;
+    position: absolute;  
+         
+}
+
+.container-error-message{
+    padding: -3px;
+    width: 195px;
+    height: 10px;
+    font-size: 12px;
+}
+
+
+

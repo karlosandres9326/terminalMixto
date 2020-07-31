@@ -1,0 +1,119 @@
+
+.header{
+    
+    background: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    padding-top: 20px;
+    color: white;
+    
+    
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.titulo{
+    margin-top: 40px;
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    margin-left: 30px;
+    
+}
+
+.iconoCarro{
+    margin-top: -150px;
+    color: rgb(110, 108, 108);
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 400px;
+}
+
+.iconoCarro2{
+    margin: -50px 10px 25px -20px;
+}
+
+.table-responsive{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+    
+    
+}
+
+.card{
+    box-shadow:  5px 5px 5px 0px  #e0e0e0c4;  
+    margin-left: 30px;
+    margin-right: 30px; 
+    width: auto;
+    margin-top: -10px;
+    background: white;
+    border-style: solid;
+    padding-top: 10px;
+   
+}
+
+
+
+.mat-dialog-container {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+
+.fila{
+    
+    
+    font-size: 14px;
+    color: rgb(104, 101, 101);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+
+.botonEditar{
+    color: rgb(30, 165, 102);
+   
+
+}
+
+.nuevovehiculo{
+    
+    background: rgb(18, 150, 88);
+    color: white;
+    
+}
+
+.boton{
+    margin: 10px auto 10px auto;
+}
+
+.mat-raised-button{
+    margin-top: 10px;
+    background: rgb(18, 150, 88);
+    color: white;
+    
+    
+}
+
+
+
+.nuevovehiculo:hover{
+    background: rgba(86, 177, 106, 0.781);
+}
+
+.img-thumbnail {
+    width: 90px;
+    height:70px;
+    
+  }

@@ -1,0 +1,188 @@
+
+<h1 align="center" class="titulo"> Nuevo Viaje</h1>
+
+  
+<form  [formGroup]="salidaForm" class="formulario" (ngSubmit)="onSaveSalida(salidaForm)" >
+
+
+<div class="card" >
+          
+    <div class="card-body">
+
+      <input formControlName="id" type="hidden"  > 
+
+        <div class="vehiculo">
+       
+            <div class="vehiculo" >
+              <label for="vehiculo"><b>Vehiculo:</b></label>
+              <select class="form-control"   id="vehiculo" formControlName="vehiculo" >
+              <option *ngFor="let vehiculo of vehiculos" value="{{vehiculo.placa}}" >{{vehiculo.placa}}</option> 
+              
+              </select>
+            </div>
+    
+        </div> 
+
+        <div class="origen">
+       
+            <div class="origen" >
+              <label for="origen"><b>Origen:</b></label>
+              <select class="form-control"   id="origen" formControlName="origen" >
+              <option >CONSACA</option> 
+              <option >PASTO</option> 
+              </select>
+            </div>
+    
+        </div> 
+
+        <div class="destino">
+       
+            <div class="destino" >
+              <label for="destino"><b>Destino:</b></label>
+              <select class="form-control"   id="destino" formControlName="destino" >
+              <option >CONSACA</option> 
+              <option >PASTO</option> 
+              </select>
+            </div>
+    
+        </div> 
+
+        <div class="fecha">
+
+          <div class="form-group">
+            <label for="fecha"><b>Fecha:</b></label>
+            <input type="date" id="fecha" name="fecha"  formControlName="fecha"  >
+        </div>
+          
+          
+
+            <!---
+
+
+            <label for="fecha"><b>Fecha:</b></label>
+            <input [matDatepicker]="myDatePicker" [min]="minDate" formControlName="fecha" id="fecha" name="fecha" >
+            <mat-datepicker-toggle [for]="myDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #myDatePicker ></mat-datepicker>
+
+            <mat-form-field>
+              <input matInput placeholder=”Select Date” [matDatepicker]=”datepickerRef” name=”datepicker” ngModel #dateCtrl=”ngModel” required readonly/>
+              <mat-datepicker-toggle [for]=”datepickerRef” matSuffix></mat-datepicker-toggle>
+              <mat-datepicker #datepickerRef></mat-datepicker>
+              <mat-error *ngIf=”dateCtrl.errors?.required && deptCtrl.touched”>Choose a Date</mat-error>
+              </mat-form-field>
+          
+            -->
+
+          <!----
+         
+          -->
+
+
+        </div>
+
+
+        <!---
+        <mat-form-field>
+          <input matInput formControlName="fecha"  [matDatepicker]="picker"  placeholder="Input & change events" [min]="minDate"
+                 (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+        <div class="example-events">
+        
+          <div *ngFor="let e of events">{{e}}</div>
+        </div>
+      -->
+      
+
+        <div class="hora">
+            <div class="form-group">
+                <label for="hora"><b>Hora:</b></label>
+                <input type="time" id="hora" name="hora" class="form-control" formControlName="hora">
+            </div>
+
+        </div>
+
+        <div class="guardar">
+            <button mat-raised-button  type="submit"  >  
+              <mat-icon>save</mat-icon> Crear Viaje
+            </button>
+          </div>
+
+    </div>
+</div>
+
+</form>
+
+
+
+<h1 align="center" class="titulo2"> Listado de Viajes</h1>
+
+
+
+<section >  
+  <div class="cardVehiculo">
+  <div class="card">
+    
+    <div class="table-responsive">
+    
+      <table class="table table-sm table-hover">
+        <thead class="header">
+          <tr align="center">
+            <th scope="col" > N° </th>
+            <th scope="col"> VEHICULO </th>
+            <th scope="col"> ORIGEN</th>
+            <th scope="col"> DESTINO</th>
+            <th scope="col"> FECHA</th>
+            <th scope="col"> HORA</th>
+            <th scope="col"> ACCIONES</th>
+            
+          </tr>
+        </thead>
+  
+        <tbody class="body">
+          <tr *ngFor= "let salida of salidas; index as i" align="center">
+            <th scope="row" align="center" class="fila"> {{i+1}}</th>
+            <!-- <td> <img src="https://firebasestorage.googleapis.com/v0/b/proyecto-ed3ff.appspot.com/o/imagesConductores%2Fcarro.jpg?alt=media&token=568b2973-dc89-46a9-8d4c-b200a9340992" class="img-thumbnail" alt="profile"> </td> -->
+            
+            <td align="center" class="fila"> {{salida.vehiculo}}</td> 
+            <td align="center" class="fila"> {{salida.origen}}</td>
+            <td align="center" class="fila"> {{salida.destino}}</td>
+            <td align="center" class="fila"> {{salida.fecha}}</td>
+            <td align="center" class="fila"> {{salida.hora}}</td>
+            
+            
+            <td class="fila"> 
+                <button mat-icon-button class="botonEditar"  matTooltip="Editar" > <mat-icon>edit</mat-icon></button>
+                <button mat-icon-button color="error"  matTooltip="Eliminar" (click)="onDeleteSalida(salida.id)"> <mat-icon>delete</mat-icon>  </button>
+            </td>
+  
+          </tr>
+        </tbody>
+  
+      </table>
+  
+    </div>
+
+
+
+  </div>
+
+
+  
+  
+  
+
+</div>
+</section>  
+
+
+    
+
+    
+
+
+
+
+ 

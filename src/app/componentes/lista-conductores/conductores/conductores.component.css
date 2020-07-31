@@ -1,0 +1,198 @@
+.alert-danger{
+    color: red;
+    padding-top: -6px;
+    padding-left: 3px;
+    width: 200px;
+    height: 23px;
+      
+}
+
+
+.alert-success{
+   
+    padding: -3px;
+    width: 289px;
+    height: 25px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 20px;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+         
+}
+
+.container-error-message{
+    padding-top: -7px;
+    width: 195px;
+    height: 10px;
+    font-size: 11px;
+}
+
+.card{
+    
+  
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 850px;
+    height: 500px;
+    
+}
+
+.card-header{
+    width:906px;
+    background:   rgba(27, 94, 172, 0.904);
+    color: white;
+    margin-top: -1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 13px;
+    height: 50px;
+}
+
+.header2{
+    background: rgba(231, 229, 229, 0.596);
+    width: 850px;
+    height: 40px;
+    color: rgb(119, 119, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding-left: 330px;
+    margin-left: -1px;
+    padding-top: 5px;
+    margin-top: -10px;
+}
+
+.card-body{
+    padding-right: 10px;
+    width: 780px;
+}
+
+.cerrar{
+    margin-left: 560px;
+    border:rgba(255, 255, 255, 0.616);
+    background:   rgba(27, 95, 172, 0);
+    color: white;
+    display: inline-block;
+    margin-top: -90px;
+
+    
+}
+
+.iconoCarro2{
+    margin-top: -32px;
+    color: white;
+    margin-left: 170px;
+    font-size: 30px;
+}
+
+
+.cedula{
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 200px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+    position: absolute 
+}
+
+.nombres{
+    margin-left: 20px;
+    margin-top: 140px;
+    width: 270px; 
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+    position: absolute 
+}
+
+.apellidos{
+    margin-left: 310px;
+    margin-top: 115px;
+    width: 270px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+    position: absolute  
+}
+
+.licencia{
+    margin-left: 20px;
+    margin-top: 215px;
+    width: 200px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+    position: absolute  
+}
+
+.telefono{
+    margin-left: 240px;
+    margin-top: 215px;
+    width: 220px; 
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    position: absolute 
+}
+
+.direccion{
+    margin-left: 600px;
+    margin-top: 115px;
+    width: 230px;  
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    position: absolute 
+}
+
+.guardar{
+    margin-left: 20px;
+    margin-top: 310px;
+    
+
+}
+
+mat-raised-button{
+    width: 100px;
+}
+
+.container-input-file{
+    margin-left: 485px;
+    margin-top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: rgba(96, 97, 100, 0.76);
+    position: absolute;
+    
+}
+
+.container-input-file1{
+    margin-left: 485px;
+    margin-top: 215px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    position: absolute 
+
+}
+
+.input[type='file']{
+    display: none;
+}
+
+.custom-file{
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+
+

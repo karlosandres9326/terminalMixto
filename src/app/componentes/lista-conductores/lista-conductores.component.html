@@ -1,0 +1,61 @@
+
+<h3 align="left" class="titulo"> Listado de Conductores </h3>
+<br>
+<div class="iconoConductor2">
+  <mat-icon class="iconoConductor">airline_seat_recline_normal</mat-icon>
+</div>
+
+
+<section >
+  <div class="card">
+
+    <div class="boton" align="center">
+      <button mat-raised-button  (click)="onCreateConductor(conductor)"  > <mat-icon>add</mat-icon> Nuevo Conductor</button>
+    
+    </div>
+
+  
+  <div class="table-responsive">
+    
+    <table class="table table-sm table-hover">
+      <thead class="header">
+        <tr align="center">
+          <th scope="col" > N° </th>
+          <th scope="col"> FOTO </th>
+          <th scope="col"> CEDULA</th>
+          <th scope="col"> NOMBRES</th>
+          <th scope="col"> APELLIDOS</th>
+          <th scope="col"> LICENCIA</th>
+          <th scope="col"> TELEFONO</th>
+          <th scope="col"> DIRECCION</th>
+          <th scope="col"> ACCIONES</th>
+          
+        </tr>
+      </thead>
+
+      <tbody class="body">
+        <tr *ngFor= "let conductor of conductores; index as i" align="center">
+          <th scope="row" align="center"> {{i+1}}</th>
+          <td> <img src= {{conductor.imageConductor}} class="img-thumbnail" alt="profile"> </td>
+          <td align="center" class="fila"> {{conductor.cedula}}</td> 
+          <td align="center" class="fila"> {{conductor.nombres}}</td>
+          <td align="center" class="fila"> {{conductor.apellidos}}</td>
+          <td align="center" class="fila"> {{conductor.licencia}}</td>
+          <td align="center" class="fila"> {{conductor.telefono}}</td>
+          <td align="center" class="fila"> {{conductor.direccion}}</td>
+          
+          <td class="fila"> 
+              <button mat-icon-button class="botonEditar"  matTooltip="Editar" (click)="onUpdateConductor(conductor)"> <mat-icon>edit</mat-icon></button>
+              <button mat-icon-button color="error"  matTooltip="Eliminar" (click)="onDeleteConductor(conductor.id)"> <mat-icon>delete</mat-icon>  </button>
+          </td>
+
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+  </div>
+</section>
+

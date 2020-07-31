@@ -1,0 +1,22 @@
+.jumbotron{
+    height: 160px;
+    width: 1100px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+
+.imagen2{
+    
+    background-image: url(/images/logo3.png);
+    background-repeat: no-repeat;
+    background-size: 900px 300px;
+    height: 500px;
+    width: 900px;
+    margin:auto;
+    margin-top: 100px;
+    
+}
+
+
+

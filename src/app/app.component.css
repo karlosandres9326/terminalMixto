@@ -1,0 +1,178 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 7px 15px  #777575;
+    
+    
+    
+    
+    
+}
+
+.example-is-mobile .example-toolbar {
+    position: fixed;
+    z-index: 2;
+}
+
+h2.example-app-name {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    
+}
+
+.example-sidenav-container {
+    flex: 1;
+    margin-top: 20px;
+    background:  #f0eeeea1;
+    
+    
+    
+    
+}
+
+.example-is-mobile .example-sidenav-container {
+    flex: 1 0 auto;
+}
+
+.sidenav-content{
+    padding: 15px;
+    
+    
+    
+}
+
+.example-toolbar{
+    /*background:  #184F34; 
+    background:   rgba(28, 100, 184, 0.904);  azul claro */
+    background:   rgba(27, 94, 172, 0.904);
+    color: white;
+    box-shadow: 5px 3px 1px 2px rgb(18, 150, 88, 0.900);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+   
+    
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.email-user{
+    color: aqua;
+    font-size: smaller;
+    margin-right: 15px;
+    margin-left: 12px;
+}
+
+mat-sidenav{
+    width: 18%;
+    background:rgba(16, 32, 54, 0.918) ;
+    opacity: 100%; 
+    /* 
+    width: 250px;
+     background:rgba(16, 32, 54, 0.918) ; 
+    background: repeating-linear-gradient(-90deg,#15223f, #292a2b); */
+    box-shadow: 1px 5px 15px #979696;
+    
+   
+}
+
+mat-icon{
+    color: white;
+    width: 10px;
+    height: 10px;
+    margin-left: 2%;
+    margin-right: 30px;
+    margin-top: -15px;
+
+}
+
+
+
+.item{
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    left: 40px; 
+    margin-left: 5px;
+    padding-left: -30%;
+    
+    
+
+}
+
+
+
+
+
+.item:hover{
+    background: rgba(38, 131, 238, 0.507);
+    
+    
+}
+
+
+
+.item:after + :checked{
+    background: rgba(38, 131, 238, 0.507);
+}
+
+
+
+.icono{
+    margin-right: 5%;
+    color: white;
+
+}
+
+.titulo{
+    color: white;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.subtitulo{
+    font-size: 10px;
+    margin-left: -195px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.logo{
+    background-image: url(/images/titulo\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: -10px;
+    box-shadow: 1px 7px 15px  #9e9e9ece;
+}
+
+
+
+
+
+
+mat-list-item .vehiculos{
+    width: 5px;
+}
+
+mat-list-item .item{
+    width: 10px;
+}

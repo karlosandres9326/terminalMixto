@@ -1,0 +1,299 @@
+<div class="card-header">
+  Reservar Silla
+  <mat-icon class="puesto">event_seat</mat-icon>
+
+</div>
+
+<div class="card">
+
+  <button class="cerrar" (click)="onClose()">
+    <mat-icon>clear</mat-icon>
+  </button>
+  <form [formGroup]="reservaForm" class="formulario" (ngSubmit)="onSaveReserva(reservaForm)">
+
+    <div class="container-1">
+
+
+
+
+      <div class="container-form-authentication">
+
+
+
+        <div class="carro"> </div>
+
+          <div class="libre"> </div>
+          <h4 class="libre1">Disponible</h4>
+            <div class="ocupado"></div>
+            <h4 class="ocupado1">Ocupado</h4>
+              <div class="seleccionado"> </div>
+              <h4 class="seleccionado1">Seleccionado</h4>
+
+          <h4 class="info">Información del Pasajero</h4>
+
+        <div type="hidden"></div>
+
+        <div class="radio">
+
+
+          <div class="puesto1" *ngIf="!puesto1">
+            <input type="radio" style="color: red !important;" formControlName="puesto" name="puesto" id="puesto1"
+              value="1" >
+            <label for="puesto1"> <b> 1 </b></label>
+          </div>
+
+          <div class="puesto1" *ngIf="puesto1">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto1" (click)="alertaPuestoUsado(1)"
+              value="1" >
+            <label  style="background-color: red !important;" for="puesto1"> <b style="color: white !important;"> 1 </b></label>
+          </div>
+
+         
+          <div class="puesto2">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto2" value="2">
+            <label for="puesto2"><b> 2 </b></label>
+          </div>
+
+          <div class="puesto2" *ngIf="puesto2">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto2" (click)="alertaPuestoUsado(2)"
+              value="2" >
+            <label  style="background-color: red !important;" for="puesto2"> <b style="color: white !important;"> 2 </b></label>
+          </div>
+
+
+          <div class="puesto3">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto3" value="3">
+            <label for="puesto3"><b> 3 </b></label>
+          </div>
+
+          <div class="puesto3" *ngIf="puesto3">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto3" (click)="alertaPuestoUsado(3)"
+              value="3" >
+            <label  style="background-color: red !important;" for="puesto2"> <b style="color: white !important;"> 3 </b></label>
+          </div>
+
+          
+
+          <div class="puesto4">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto4" value="4">
+            <label for="puesto4"><b>4</b></label>
+          </div>
+
+          <div class="puesto4" *ngIf="puesto4">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto4" (click)="alertaPuestoUsado(4)"
+              value="4" >
+            <label  style="background-color: red !important;" for="puesto4"> <b style="color: white !important;"> 4 </b></label>
+          </div>
+
+
+          <div class="puesto5">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto5" value="5">
+            <label for="puesto5"><b>5</b></label>
+          </div>
+
+          <div class="puesto5" *ngIf="puesto5">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto5" (click)="alertaPuestoUsado(5)"
+              value="5" >
+            <label  style="background-color: red !important;" for="puesto5"> <b style="color: white !important;"> 5 </b></label>
+          </div>
+
+
+          <div class="puesto6">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto6" value="6">
+            <label for="puesto6"><b>6</b></label>
+          </div>
+
+          <div class="puesto6" *ngIf="puesto6">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto6" (click)="alertaPuestoUsado(6)"
+              value="6" >
+            <label  style="background-color: red !important;" for="puesto6"> <b style="color: white !important;"> 6 </b></label>
+          </div>
+
+
+
+          <div class="puesto7">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto7" value="7">
+            <label for="puesto7"><b>7</b></label>
+          </div>
+
+          <div class="puesto7" *ngIf="puesto7">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto7" (click)="alertaPuestoUsado(7)"
+              value="7" >
+            <label  style="background-color: red !important;" for="puesto7"> <b style="color: white !important;"> 7 </b></label>
+          </div>
+
+
+
+          <div class="puesto8">
+            <input type="radio" formControlName="puesto" name="puesto" id="puesto8" value="8">
+            <label for="puesto8"><b>8</b></label>
+          </div>
+
+          <div class="puesto8" *ngIf="puesto8">
+            <input type="radio" [disabled]="true" formControlName="puesto" name="puesto" id="puesto8" (click)="alertaPuestoUsado(8)"
+              value="8" >
+            <label  style="background-color: red !important;" for="puesto8"> <b style="color: white !important;"> 8 </b></label>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="container-form-informacion">
+
+        <div class="datos">
+
+          <div class="cedula">
+          <label class="label"><b>Cedula:</b></label>
+            <input placeholder="Cedula" type="text" formControlName="cedula" class="form-control"
+              aria-label="Sizing example input" pattern="[0-9]*$">
+
+            <div class="alert-danger" *ngIf="cedula.invalid && (cedula.dirty || cedula.touched)">
+              <div class="container-error-message" *ngIf="cedula.errors.required">
+                Este campo es Obligatorio*
+              </div>
+              <div class="container-error-message" *ngIf="cedula.errors.pattern">
+                Ingrese solo Numeros*
+            </div>
+            </div>
+          </div>
+
+          <div class="nombre">
+          <label class="label"><b>Nombre:</b></label>
+            <input placeholder="Nombre" type="text" formControlName="nombre" class="form-control"
+              aria-label="Sizing example input" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{1,48}">
+
+            <div class="alert-danger" *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)">
+              <div class="container-error-message" *ngIf="nombre.errors.required">
+                Este campo es Obligatorio*
+              </div>
+              <div class="container-error-message" *ngIf="nombre.errors.pattern">
+                Ingrese solo Letras*
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="apellido">
+          <label class="label"><b>Apellido:</b></label>
+            <input placeholder="Apellido" type="text" formControlName="apellido" class="form-control"
+              aria-label="Sizing example input" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{1,48}">
+
+            <div class="alert-danger" *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)">
+              <div class="container-error-message" *ngIf="apellido.errors.required">
+                Este campo es Obligatorio*
+              </div>
+              <div class="container-error-message" *ngIf="apellido.errors.pattern">
+                Ingrese solo Letras*
+              </div>
+            </div>
+          </div>
+
+          <div class="edad">
+          <label class="label"><b>Edad:</b></label>
+            <input placeholder="Edad" type="text" formControlName="edad" class="form-control"
+              aria-label="Sizing example input" pattern="[0-9]*$">
+
+            <div class="alert-danger" *ngIf="edad.invalid && (edad.dirty || edad.touched)">
+              <div class="container-error-message" *ngIf="edad.errors.required">
+                Este campo es Obligatorio*
+              </div>
+              <div class="container-error-message" *ngIf="edad.errors.pattern">
+                Ingrese solo Numeros*
+              </div>
+              <div class="container-error-message" *ngIf="edad.errors.minlength">
+                Debe tener Minimo 1 digitos*
+              </div>
+              <div class="container-error-message" *ngIf="edad.errors.maxlength">
+                Debe tener Maximo 3 digitos*
+              </div>
+            </div>
+          </div>
+
+
+          <div class="telefono">
+          <label class="label"><b>Teléfono:</b></label>
+            <input placeholder="Teléfono" type="text" formControlName="telefono" class="form-control"
+              aria-label="Sizing example input" pattern="[0-9]*$">
+
+            <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
+              <div class="container-error-message" *ngIf="telefono.errors.required">
+                Este campo es Obligatorio*
+              </div>
+              <div class="container-error-message" *ngIf="telefono.errors.pattern">
+                Ingrese solo Numeros*
+              </div>
+              <div class="container-error-message" *ngIf="telefono.errors.minlength">
+                Debe tener Minimo 7 digitos*
+              </div>
+              <div class="container-error-message" *ngIf="telefono.errors.maxlength">
+                Debe tener Maximo 10 digitos*
+              </div>
+            </div>
+          </div>
+
+
+          <div class="correo">
+          <label class="label"><b>Correo Electronico:</b></label>
+            <input placeholder="Este campo es Opcional*" type="text" formControlName="email" class="form-control"
+              aria-label="Sizing example input" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+
+            <div class="alert-danger" *ngIf="email.invalid &&  (email.dirty || email.touched)">
+              <div class="container-error-message" *ngIf="email.errors.pattern">
+                Ingrese un Correo Valido*
+            </div>
+            </div>
+          </div>
+
+          <div class="guardar">
+            <button mat-raised-button   type="submit" [disabled]="!reservaForm.valid" style="font-size: 20p;">
+              <mat-icon> save</mat-icon> Guardar Reserva
+            </button>
+          </div>
+
+          <div class="alert-success">
+            Podrá Guardar su Reserva cuando llene todos los campos.
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </form>
+  <!---
+<div class="puesto1" *ngIf="mostrar"> 
+
+  <input type="radio"  name="puesto" id="puesto1" value="1"  >
+  <label for="puesto1"> <b> 1 </b></label>
+
+</div>
+
+
+  <button (click)="onToggle()">Toggle</button>
+
+-->
+
+</div>

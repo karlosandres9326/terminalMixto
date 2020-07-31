@@ -1,0 +1,192 @@
+.card{ 
+    width: 900px;
+    height: 110px;
+    margin: 25px auto 20px auto;
+    /*margin-top: 25px;
+    margin-left: 65px;
+    */
+    box-shadow:  5px 5px 5px 0px  #e0e0e0c4;
+    
+     
+}
+
+.card-body{
+    height: 10%;
+}
+
+.mat-dialog-container {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.titulo{
+   
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    margin: 5px auto 20px auto;
+}
+
+.iconoSalidas{
+    font-size: 42px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
+.reservar{
+    background: rgb(182, 26, 99, 0.918);
+    color: white;
+     border-radius: 20px;
+ 
+}
+
+.button{
+    margin: -6% 15px 3% 700px;
+}
+
+.puesto{
+    margin-right: 10px;
+}
+
+.numViaje{
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+
+
+
+.imgVehiculo{
+    color: rgb(18, 150, 88);
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 32px;
+}
+
+.imgOrigen{
+    color: rgba(12, 40, 110, 0.76);
+    font-size: 26px;
+    margin-left: 159px;
+    margin-top: -19px;
+}
+
+
+.imgDestino{
+    color: rgba(12, 40, 110, 0.76);
+    font-size: 26px;
+    margin-left: 286px;
+    margin-top: -26px;
+}
+
+.imgFecha{
+    color: rgba(12, 40, 110, 0.76);
+    font-size: 26px;
+    margin-left: 412px;
+    margin-top: -27px;
+}
+
+.imgHora{
+    color: rgba(12, 40, 110, 0.76);
+    font-size: 26px;
+    margin-left: 542px;
+    margin-top: -27px;
+}
+
+.vehiculo{
+    color: rgb(18, 150, 88);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: -50px;
+    margin-left: 32px;
+}
+
+
+.vehiculo1{
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: -2px;
+    margin-left: 44px;
+    
+}
+
+.origen{
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 170px;
+    margin-top: -57px;
+}
+
+.origen1{
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 170px;
+    margin-top: -1px;
+}
+
+
+.destino{
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 293px;
+    margin-top: -57px;
+}
+
+.destino1{
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 297px;
+    margin-top: 1px;
+}
+
+.fecha{
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 427px;
+    margin-top: -57px;
+}
+
+.fecha1{
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 427px;
+    margin-top: 6px;
+}
+
+.hora{
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 555px;
+    margin-top: -56px;
+}
+
+.hora1{
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 555px;
+    margin-top: 5px;
+}

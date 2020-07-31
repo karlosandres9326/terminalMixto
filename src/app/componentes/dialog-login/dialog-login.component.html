@@ -1,0 +1,115 @@
+<div class="container-1">
+        <div class="imagen" align="center"> </div>
+
+        
+<mat-tab-group>
+    
+    <mat-tab label="Iniciar sesión">
+
+        <div class="container-form-authentication">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    </div>
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo electronico" [(ngModel)]="email">
+                </div>
+                <small class="form-text text-muted">Este campo es obligatorio.</small>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></div>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password">
+                </div>
+                <small class="form-text text-muted">Este campo es obligatorio.</small>
+            </div>
+            <button mat-raised-button class="iniciar" type="submit" (click)="onLogin()" color="primary" > Iniciar Sesión</button>
+        </div>
+
+    </mat-tab>
+    <mat-tab label="Regístrarse">
+        
+            <div class="container-form-authentication">
+                <div class="form-group">
+                    <div class="input-group">
+                        
+                       <!-- 
+                           
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-id-card-o" aria-hidden="true"></i></div>
+                        </div>
+                           
+                        
+                        <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="register.nombre">   
+                    
+                    -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            
+                        </div>
+                      <!--  
+                          
+                        <div class="input-group-text"><i class="fa fa-id-card-o" aria-hidden="true"></i></div>
+                        <input type="text" class="form-control" placeholder="Apellido" [(ngModel)]="register.apellido">  
+                    
+                    
+                    -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        </div>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo electronico" [(ngModel)]="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></div>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password">
+                    </div>
+                </div>
+                
+
+                <div class="form-group">
+                    <br>
+                    <h6>Seleccionar Imagen </h6>
+                    <input type="file" accept=".png, .jpg" (change)="onUpload($event)">
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                    [style.width]="(uploadPercent | async ) + '%'">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                 <!---   <input class="form-control" type="file" (change)="selectImage($event)" accept="image/*">  -->
+                </div>
+                <button *ngIf="urlImage | async; else btnDisabled" type="submit" class="btn btn-success btn-block" (click)="onAddUser()">Registrar</button>
+
+                <ng-template #btnDisabled>
+                    <button type="submit" disabled=true class="btn btn-secondary btn-block" (click)="onAddUser()">Registrar</button>
+                </ng-template>
+
+                
+
+                <input #imageUser  type="hidden" [value]= "urlImage  | async "> 
+
+
+            </div>
+
+    </mat-tab>
+</mat-tab-group>
+
+</div>

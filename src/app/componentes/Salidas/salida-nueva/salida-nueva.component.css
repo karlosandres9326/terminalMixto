@@ -1,0 +1,157 @@
+.example-events {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #555;
+    overflow: auto;
+  }
+
+
+
+.card{
+    box-shadow:  5px 5px 5px 0px  #e0e0e0c4;  
+    margin-left: 10px;
+    margin-right: 30px; 
+    width: auto;
+    margin-top: -10px;
+    background: white;
+    border-style: solid;
+    padding-top: 35px;
+   
+}
+
+
+
+.titulo{
+    margin-top: 20px;
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    margin: 20px auto 20px auto;
+}
+
+.titulo2{
+    margin-top: 20px;
+    color: rgb(110, 108, 108);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    margin: 60px auto 20px auto;
+}
+
+.vehiculo{
+    width: 180px;
+    color: rgb(18, 150, 88);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+    margin-left: 5px; 
+}
+
+.origen{
+    width: 170px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;margin-left: 110px;
+    margin-top: -70px;
+    margin-left: 97px;
+}
+
+.destino{
+    width: 170px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 190px;
+    margin-top: -70px;
+}
+
+.fecha{
+    width: 180px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 570px;
+    margin-top: -90px; 
+    padding-bottom: -10px;
+}
+
+.hora{
+    width: 180px;
+    color: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 570px;
+    margin-top: -10px; 
+}
+
+.guardar{
+    padding: center;
+    margin: -125px auto 60px 800px; 
+}
+
+.mat-raised-button{
+    margin-top: 10px;
+    background: rgb(18, 150, 88);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+}
+
+
+.header{
+    
+    background: rgba(12, 40, 110, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    padding-top: 20px;
+    color: white;
+    
+    
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+
+
+.table-responsive{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+    
+    
+}
+
+
+
+
+.fila{
+    
+    
+    font-size: 14px;
+    color: rgb(104, 101, 101);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+
+.botonEditar{
+    color: rgb(30, 165, 102);
+   
+
+}
+
+
+.img-thumbnail {
+    width: 90px;
+    height:70px;
+    
+  }

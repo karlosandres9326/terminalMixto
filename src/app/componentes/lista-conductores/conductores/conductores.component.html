@@ -1,0 +1,184 @@
+
+   
+
+
+
+
+<div class="card-header"> 
+  Nuevo Conductor
+  
+</div>
+ 
+<div class="card">
+
+  <div class="header2">
+    <div class="card-header-2">
+      Información del Conductor
+    </div>
+  </div>
+
+  <button class="cerrar"  (click)="onClose()" ><mat-icon>clear</mat-icon> </button>
+
+  <mat-icon class="iconoCarro2">airline_seat_recline_normal</mat-icon>
+
+  
+  <!-- <form [formGroup]="conductorForm" class="formulario" (ngSubmit)="onSaveConductor(conductorForm.value)"> -->
+  
+<form [formGroup]="conductorForm" class="formulario" (ngSubmit)="onSaveConductor(conductorForm.value)"> 
+  
+<div class="card-body">
+  
+
+ <input formControlName="id" type="hidden" >  
+
+    
+  </div>
+
+    <div class="datos">
+
+         
+      <div class="cedula" >
+        <label for="exampleFormControlSelect2"><b>Cedula</b></label>
+        <input  placeholder="Cedula" type="text" formControlName="cedula"  
+        class="form-control" aria-label="Sizing example input" pattern="[0-9]*$">
+
+        <div class="alert-danger" *ngIf="cedula.invalid && (cedula.dirty || cedula.touched)" >
+          <div class="container-error-message" *ngIf="cedula.errors.required">
+            Este campo es Obligatorio*
+          </div>
+          <div class="container-error-message" *ngIf="cedula.errors.pattern">
+            Ingrese solo Numeros*
+          </div>
+        </div>
+      </div>
+      
+        <div class="nombres">
+          <label for="exampleFormControlSelect2"><b>Nombres</b></label>
+          <input  placeholder="Nombres"  type="text" formControlName="nombres" 
+          class="form-control" aria-label="Sizing example input"
+          pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{1,48}" >
+
+          <div class="alert-danger" *ngIf="nombres.invalid && (nombres.dirty || nombres.touched)" >
+            <div class="container-error-message" *ngIf="nombres.errors.required">
+              Este campo es Obligatorio*
+            </div>
+            <div class="container-error-message" *ngIf="nombres.errors.pattern">
+              Ingrese solo Letras*
+            </div>
+          </div>
+        </div> 
+      <br>
+      
+      <div class="apellidos">
+        <label for="exampleFormControlSelect2"><b>Apellidos</b></label>
+        <input  placeholder="Apellidos"  type="text" formControlName="apellidos" 
+        class="form-control" aria-label="Sizing example input"
+        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{1,48}">
+
+        <div class="alert-danger" *ngIf="apellidos.invalid && (apellidos.dirty || apellidos.touched)" >
+          <div class="container-error-message" *ngIf="apellidos.errors.required">
+            Este campo es Obligatorio*
+          </div>
+          <div class="container-error-message" *ngIf="apellidos.errors.pattern">
+            Ingrese solo Letras*
+          </div>
+        </div>
+      </div>
+
+      <div class="licencia">
+        <label for="exampleFormControlSelect2"><b>Licencia</b></label>
+        <input  placeholder="Licencia"  type="text" formControlName="licencia"  
+        class="form-control" aria-label="Sizing example input" pattern="[0-9]*$">
+
+        <div class="alert-danger" *ngIf="licencia.invalid && (licencia.dirty || licencia.touched)" >
+          <div class="container-error-message" *ngIf="licencia.errors.required">
+             Este campo es Obligatorio*
+          </div>
+          <div class="container-error-message" *ngIf="licencia.errors.minlength ">
+            La licencia debe tener 1 o 2 digitos
+          </div>
+          <div class="container-error-message" *ngIf="licencia.errors.pattern">
+            Ingrese solo Numeros*
+          </div>
+        </div> 
+      </div>  
+
+
+      <div class="telefono">
+        <label for="exampleFormControlSelect2"><b>Telefono</b></label>
+        <input placeholder="Celular"  type="text" formControlName="telefono" 
+        class="form-control" aria-label="Sizing example input" pattern="[0-9]*$">
+
+        <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
+          <div class="container-error-message" *ngIf="telefono.errors.required">
+            Este campo es Obligatorio*
+          </div>
+          <div class="container-error-message" *ngIf="telefono.errors.pattern">
+            Ingrese solo Numeros*
+          </div>
+          <div class="container-error-message" *ngIf="telefono.errors.minlength">
+            Debe tener Minimo 7 digitos*
+          </div>
+          <div class="container-error-message" *ngIf="telefono.errors.maxlength">
+            Debe tener Maximo 10 digitos*
+          </div>
+          
+        </div> 
+        
+      </div>
+      
+      
+      <div class="direccion">
+        <label for="exampleFormControlSelect2"><b>Dirección</b></label>
+        <input placeholder="Dirección"  type="text" formControlName="direccion"  
+        class="form-control" aria-label="Sizing example input">
+
+        <div class="alert-danger" *ngIf="direccion.invalid &&  (direccion.dirty || direccion.touched)" >
+          <div class="container-error-message" *ngIf="direccion.errors.required">
+            Este campo es Obligatorio*
+          </div>
+        </div> 
+      </div> 
+
+      
+      <label class="container-input-file1"><b>Subir Foto</b></label>
+      <div class="container-input-file">
+        <label class="custom-file" > 
+          <input type="file" accept=".png, .jpg" formControlName="imageConductor" (change)="handleImage($event)">
+          <mat-icon >cloud_upload</mat-icon><span>Subir Foto</span>
+        </label>
+        
+      </div>
+
+      <!---
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+        [style.width]="(uploadPercent | async ) + '%'">
+
+        </div>
+      </div>
+
+    -->
+
+
+      <div class="guardar">
+        <button mat-raised-button  type="submit" [disabled]="!conductorForm.valid" >  
+          <mat-icon > save</mat-icon> Guardar 
+        </button>
+      </div>
+
+      <div class="alert-success"  >
+        Para Guardar debe llenar todos los campos
+      </div> 
+        
+    </div>
+
+
+    <br>
+    
+
+
+</form>
+
+</div>

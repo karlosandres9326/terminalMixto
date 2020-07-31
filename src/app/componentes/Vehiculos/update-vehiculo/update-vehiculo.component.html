@@ -1,0 +1,166 @@
+
+
+
+<!----------//
+  
+  
+  (((
+    
+  ---->
+
+
+
+
+<div class="card-header">
+  Modificar Vehiculo
+  
+</div>
+
+
+<div class="card " >
+
+ <div class="header2">
+   <div class="card-header-2">
+     Información del Vehiculo
+   </div>
+ </div>
+
+ <button class="cerrar"  (click)="onClose()" ><mat-icon>clear</mat-icon> </button>
+
+ <mat-icon class="iconoCarro2">edit</mat-icon>
+
+ 
+
+
+
+ 
+ <!-- <form [formGroup]="conductorForm" class="formulario" (ngSubmit)="onSaveConductor(conductorForm.value)"> -->
+ 
+<form [formGroup]="vehiculoForm" class="formulario" (ngSubmit)="onEditVehiculo(vehiculoForm)"> 
+ 
+<div class="card-body">
+
+<input formControlName="id" type="hidden" [ngModel] = "this.vehiculoService.selectedVehiculo.id" >  
+     
+ </div>
+
+   <div class="datos">
+
+     <!--
+
+     <div class="container-input-file">
+       <label class="custom-file">
+         <input type="file" formControlName="imageConductor" (change)="handleImage($event)">
+         <mat-icon >cloud_upload</mat-icon><span>Subir Foto</span>
+       </label>
+     </div>
+
+   -->
+
+       
+     <div class="cedula" >
+       <label for="exampleFormControlSelect2"><b> Placa: </b></label>
+       <input  placeholder="Placa" type="text" formControlName="placa" [ngModel] = "this.vehiculoService.selectedVehiculo.placa"  
+       class="form-control" aria-label="Sizing example input">
+
+       <div class="alert-danger" *ngIf="placa.invalid && (placa.dirty || placa.touched)" >
+         <div class="container-error-message" *ngIf="placa.errors.required">
+           Este campo es Obligatorio*
+         </div>
+       </div>
+     </div>
+     
+       <div class="marca">
+         <label for="exampleFormControlSelect2"><b>Marca</b>:</label>
+         <input  placeholder="Marca"  type="text" formControlName="marca" [ngModel] = "this.vehiculoService.selectedVehiculo.marca"
+         class="form-control" aria-label="Sizing example input" 
+         pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{1,48}" 
+         >
+
+         <div class="alert-danger" *ngIf="marca.invalid && (marca.dirty || marca.touched)" >
+           <div class="container-error-message" *ngIf="marca.errors.required">
+             Este campo es Obligatorio*
+           </div>
+           <div class="container-error-message" *ngIf="marca.errors.pattern">
+             Ingrese solo Letras*
+           </div>
+         </div>
+       </div> 
+     <br>
+     
+     <div class="modelo">
+       <label for="exampleFormControlSelect2"><b>Modelo</b>:</label>
+       <input  placeholder="Modelo"  type="text" formControlName="modelo" [ngModel] = "this.vehiculoService.selectedVehiculo.modelo"
+       class="form-control" aria-label="Sizing example input"
+       pattern="[0-9]*$">
+
+       <div class="alert-danger" *ngIf="modelo.invalid && (modelo.dirty || modelo.touched)" >
+         <div class="container-error-message" *ngIf="modelo.errors.required">
+           Este campo es Obligatorio*
+         </div>
+         <div class="container-error-message" *ngIf="modelo.errors.pattern">
+           Ingrese solo Numeros*
+         </div>
+         
+       </div>
+     </div>
+
+     <!--  -->
+     <div class="conductor">
+      
+       <div class="form-group" >
+         <label for="exampleFormControlSelect2"><b>Conductor</b>:</label>
+         <select class="form-control"  formControlName="conductor" id="exampleFormControlSelect2" [ngModel] = "this.vehiculoService.selectedVehiculo.conductor" >
+         <option   *ngFor="let conductor of conductores" value="{{conductor.nombres}} {{conductor.apellidos}}">{{conductor.nombres}} {{conductor.apellidos}}</option> 
+         </select>
+       </div>
+
+           <div class="alert-danger" *ngIf="conductor.invalid && (conductor.dirty || conductor.touched)" >
+             <div class="container-error-message" *ngIf="conductor.errors.required">
+               Este campo es Obligatorio*
+             </div>
+           </div> 
+
+     </div>  
+
+
+     <div class="capacidad">
+       <label for="exampleFormControlSelect2"><b>Capacidad</b>:</label>
+       <input placeholder="Capacidad"  type="text" formControlName="capacidad" [ngModel] = "this.vehiculoService.selectedVehiculo.capacidad"
+       class="form-control" aria-label="Sizing example input"
+       pattern="[0-9]*$">
+
+       <div class="alert-danger" *ngIf="capacidad.invalid && (capacidad.dirty || capacidad.touched)">
+         <div class="container-error-message" *ngIf="capacidad.errors.required">
+           Este campo es Obligatorio*
+         </div>
+         <div class="container-error-message" *ngIf="capacidad.errors.pattern">
+           Ingrese solo Numeros*
+         </div>
+         
+       </div> 
+     </div>
+     
+     
+
+     <div class="guardar">
+       <button mat-raised-button  type="submit" [disabled]="!vehiculoForm.valid" >  
+         <mat-icon > save</mat-icon> Modificar 
+       </button>
+     </div>
+
+     <div class="alert-success" >
+       Para Guardar debe llenar todos los campos
+     </div> 
+       
+   </div>
+
+
+   <br>
+   
+
+
+</form>
+
+</div>
+

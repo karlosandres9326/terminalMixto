@@ -1,0 +1,20 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+
+snack-bar-container.exitoso{
+    background-color: #3F86E6 ;
+    color: white;
+       
+}
+
+snack-bar-container.eliminado{
+    background-color: brown;
+    color: white;
+       
+}
+
+
+

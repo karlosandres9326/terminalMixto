@@ -1,0 +1,183 @@
+
+
+
+<button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabindex="-1"><mat-icon>clear</mat-icon> </button>
+ 
+<div class="card">
+
+  
+  <form [formGroup]="reservaForm" class="formulario" (ngSubmit)="onEditReserva(reservaForm)">
+
+  
+  <div class="card-body">
+
+    <input formControlName="id" type="hidden" [ngModel] = "this.reservaService.selectedReserva.id"> 
+
+    <div class="titulo">
+      <h3>Modificar Reserva </h3>
+    </div>
+    
+    
+    <div class="title2">
+        <h5>Información del Pasajero</h5>
+       
+    </div>
+
+    
+    <div class="carro" >
+        
+    </div>
+
+
+    
+    <div class="radio" >
+
+      <div class="puesto1">
+        <input type="radio" formControlName="puesto" [ngModel] = "this.reservaService.selectedReserva.puesto" name="puesto" id="puesto1" value="1">
+        <label for="puesto1"> <b> 1 </b></label>
+      </div>
+  
+      <div class="puesto2">
+        <input type="radio" formControlName="puesto"   name="puesto" id="puesto2" value="2">
+        <label for="puesto2"><b> 2 </b></label>
+      </div>
+  
+  
+      <div class="puesto3">
+        <input type="radio"  formControlName="puesto"  name="puesto" id="puesto3" value="3">
+        <label for="puesto3"><b>3</b></label>
+      </div>
+  
+      <div class="puesto4">
+        <input type="radio" formControlName="puesto"  name="puesto" id="puesto4" value="4">
+        <label for="puesto4"><b>4</b></label>    
+      </div>
+  
+      <div class="puesto5">
+        <input type="radio" formControlName="puesto"  name="puesto" id="puesto5" value="5"> 
+        <label for="puesto5"><b >5</b></label>
+      </div>
+  
+      <div class="puesto6">
+        <input type="radio" formControlName="puesto"  name="puesto" id="puesto6" value="6">
+        <label for="puesto6"><b>6</b></label> 
+      </div>
+  
+      <div class="puesto7">
+        <input type="radio" formControlName="puesto"  name="puesto" id="puesto7" value="7">
+        <label for="puesto7"><b>7</b></label>
+      </div>
+  
+      <div class="puesto8">
+        <input type="radio" formControlName="puesto"  name="puesto" id="puesto8" value="8">
+        <label for="puesto8"><b>8</b></label>
+      </div>
+      
+    </div>
+    
+
+    
+  </div>
+
+
+
+    <div class="datos">
+        
+      <div class="cedula" >
+        <input  placeholder="Cedula" type="text" formControlName="cedula"  [ngModel] = "this.reservaService.selectedReserva.cedula"
+        class="form-control" aria-label="Sizing example input">
+
+        <div class="alert-danger" *ngIf="cedula.invalid && (cedula.dirty || cedula.touched)" >
+          <div class="container-error-message" *ngIf="cedula.errors.required">
+              Cedula es Requerida
+          </div>
+        </div>
+      </div>
+      
+        <div class="nombre">
+          <input  placeholder="Nombre"  type="text" formControlName="nombre" [ngModel] = "this.reservaService.selectedReserva.nombre"
+          class="form-control" aria-label="Sizing example input">
+
+          <div class="alert-danger" *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" >
+            <div class="container-error-message" *ngIf="nombre.errors.required">
+              Nombre es Requerido
+            </div>
+          </div>
+        </div> 
+      <br>
+      
+      <div class="apellido">
+        <input  placeholder="Apellido"  type="text" formControlName="apellido" [ngModel] = "this.reservaService.selectedReserva.apellido"
+        class="form-control" aria-label="Sizing example input">
+
+        <div class="alert-danger" *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)" >
+          <div class="container-error-message" *ngIf="apellido.errors.required">
+            Apellido es Requerido
+          </div>
+        </div>
+      </div>
+
+      <div class="edad">
+        <input  placeholder="Edad"  type="text" formControlName="edad" reservaForm="this.reservaService.selectedReserva.edad" [ngModel] = "this.reservaService.selectedReserva.edad"
+        class="form-control" aria-label="Sizing example input">
+
+        <div class="alert-danger" *ngIf="edad.invalid && (edad.dirty || edad.touched)" >
+          <div class="container-error-message" *ngIf="edad.errors.required">
+            Edad es Requerida
+          </div>
+          <div class="container-error-message" *ngIf="(edad.errors.minlength )">
+            La edad debe tener 1 o 2 digitos
+          </div>
+        </div> 
+      </div>  
+
+
+      <div class="telefono">
+        <input placeholder="Celular"  type="text" formControlName="telefono" reservaForm="this.reservaService.reserva.telefono" [ngModel] = "this.reservaService.selectedReserva.telefono"
+        class="form-control" aria-label="Sizing example input">
+
+        <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
+          <div class="container-error-message" *ngIf="telefono.errors.required">
+           Telefono es Requerido
+          </div>
+          <div class="container-error-message" *ngIf="(telefono.errors.minlength )">
+            El telefono debe tener 10 digitos
+          </div>
+        </div> 
+      </div>
+      
+      
+      <div class="correo">
+        <input placeholder="Email"  type="text" formControlName="email" reservaForm="this.reservaService.selectedReserva.email" [ngModel] = "this.reservaService.selectedReserva.email"
+        class="form-control" aria-label="Sizing example input">
+
+        <div class="alert-danger" *ngIf="email.invalid &&  (email.dirty || email.touched)" >
+          <div class="container-error-message" *ngIf="email.errors.required">
+            Email es Requerido
+          </div>
+        </div> 
+      </div>  
+
+      <div class="guardar">
+        <button mat-raised-button color="primary" type="submit" [disabled]="!reservaForm.valid" >  
+          <mat-icon > save</mat-icon> Modificar Reserva
+        </button>
+      </div>
+
+      <div class="alert-success" >
+        Para Modificar su Reserva cuando llene todos los campos
+      </div> 
+        
+    </div>
+
+
+    <br>
+    
+
+ 
+
+
+
+</form>
+
+</div>

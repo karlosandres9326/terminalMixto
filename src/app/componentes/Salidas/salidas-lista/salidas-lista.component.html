@@ -1,0 +1,84 @@
+<br>
+
+<div>
+    <h1 class="titulo" align="center"><mat-icon class="iconoSalidas"> departure_board</mat-icon> Proximas Salidas</h1><hr>
+</div>
+
+
+<!----
+<div class="container" *ngFor="let reserva of reservas;">
+
+    <td>
+        <h6>{{reserva.fecha}}</h6>
+    </td>
+
+    <td>
+        <h6>{{reserva.placa}}</h6>
+    </td>
+    <td>
+        <h6><b>{{reserva.puesto}}</b></h6>
+    </td>
+    
+    
+    
+
+</div>
+-->
+
+
+<div class="container"  *ngFor="let salida of salidas; index as i" >
+
+        
+        <div class="card">
+
+            <mat-icon class="imgVehiculo">airport_shuttle</mat-icon>
+            <mat-icon class="imgOrigen"> call_made</mat-icon>
+            <mat-icon class="imgDestino"> call_received</mat-icon>
+            <mat-icon class="imgFecha">event</mat-icon>
+            <mat-icon class="imgHora">query_builder</mat-icon>
+          
+            <div class="card-body"  >
+               
+                <h4 class="vehiculo"><b>Vehiculo</b> </h4>    
+                <h4 class="vehiculo1">{{salida.vehiculo}} </h4>
+               
+                <h4 class="origen"><b>Salida</b> </h4>     
+                <h4 class="origen1">{{salida.origen}}  </h4>
+                 
+               
+                <h4 class="destino"><b>Llegada</b></h4> 
+                <h4 class="destino1">{{salida.destino}}</h4>
+                
+                <h4 class="fecha"><b>Fecha</b> </h4>
+                <h4 class="fecha1">{{salida.fecha}} </h4>
+               
+                <h4 class="hora"><b>Hora</b></h4>  
+                <h4 class="hora1">{{salida.hora}}</h4> 
+            
+
+                
+                <div class="button" >    
+                    <button mat-raised-button matTooltip="Ver Sillas" class="reservar" type="submit" (click)="onCreate(salida)"  > <mat-icon class="puesto">event_seat</mat-icon>Ver Sillas</button>  
+                  
+                </div>
+
+            <!----   <h3 class="numViaje"><b>N° Viaje:</b> {{i+1}} </h3>  -->
+            
+                
+                
+            </div>
+
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!-- <app-reserva [userUid]="userUid"></app-reserva>  -->
+
+
+<h3 align="center" class="titulo" *ngIf="isAdmin == true"> LISTADO DE PASAJEROS </h3>
+
+
+<h6 align="center">ADMIN: {{isAdmin}}</h6>
+<section class="row mt-5">
+  <div class="table-responsive">
+
+    <table class="table table-sm table-hover">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th scope="col"> N° </th>
+          <th scope="col"> VEHICULO</th>
+          <th scope="col"> FECHA</th>
+          <th scope="col"> CEDULA</th>
+          <th scope="col"> NOMBRES</th>
+          <th scope="col"> APELLIDOS</th>
+          <th scope="col"> EDAD</th>
+          <th scope="col"> TELEFONO</th>
+          <th scope="col"> EMAIL</th>
+          <th scope="col"> PUESTO</th>
+          <th scope="col"> EDITAR</th>
+          <th scope="col"> ELIMINAR</th>
+
+
+
+        </tr>
+      </thead>
+
+      <tbody class="body">
+        <tr *ngFor="let reserva of reservas; index as i" align="center">
+          <th scope="row" align="left"> {{i+1}}</th>
+          <td align="left" class="placa"> <b>{{reserva.placa}}</b></td>
+          <td align="left" class="fecha"> <b>{{reserva.fecha}}</b></td>
+          <td align="left" class="fila"> {{reserva.cedula}}</td>
+          <td align="left" class="fila"> {{reserva.nombre}}</td>
+          <td align="left" class="fila"> {{reserva.apellido}}</td>
+          <td align="left" class="fila"> {{reserva.edad}}</td>
+          <td align="left" class="fila"> {{reserva.telefono}}</td>
+          <td align="left" class="fila"> {{reserva.email}}</td>
+          <td align="left" class="fila"> {{reserva.puesto}}
+          </td>
+
+          <!--- <td *ngIf="reserva.userUid == userUid || isAdmin == true; else noEditor">  -->
+          <td *ngIf="reserva.userUid == userUid ; else noEditor">
+            <button mat-icon-button class="botonEditar" matTooltip="Editar" (click)="onUpdateReserva(reserva)">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+
+          <ng-template #noEditor>
+            <td>
+              <button mat-icon-button class="botonEditar" matTooltip="Editar" disabled="true">
+                <mat-icon>edit</mat-icon>
+              </button>
+
+            </td>
+          </ng-template>
+
+          <td *ngIf="isAdmin == true; else noAdmin">
+            <button mat-icon-button color="error" matTooltip="Eliminar" (click)="onDeleteReserva(reserva.id)">
+              <mat-icon>delete_outline</mat-icon>
+            </button>
+          </td>
+
+          <ng-template #noAdmin>
+            <td>
+              <button mat-icon-button color="error" matTooltip="Eliminar" disabled="true">
+                <mat-icon>delete_outline</mat-icon>
+              </button>
+
+            </td>
+          </ng-template>
+
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</section>

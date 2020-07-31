@@ -1,0 +1,32 @@
+.container-form-authentication{
+    margin-top: 10px;
+}
+
+.imagen{
+    
+    background-image: url(/images/login1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px 160px;
+    width: 280px;
+    height: 160px;
+    margin:auto;
+    padding: auto;
+    
+    
+   
+}
+
+.btn{
+    width:  130px;
+    margin: auto;
+}
+
+.iniciar{
+    margin: auto 30% auto 30%;
+   
+}
+
+
+.container-1{
+    padding: 25px 25px 25px 25px;
+}
